@@ -1,7 +1,7 @@
 import React from 'react';
 import ProduectCell from "../ProductCell";
 
-const ProductList = ({Products}) => {
+const ProductList = ({Products, AddProductToCart}) => {
     return (
         <>
             {Products.map((product,index)=>{
@@ -12,6 +12,7 @@ const ProductList = ({Products}) => {
                                      description={description}
                                      stock={stock}
                                      price={price}
+                                     AddProductToCart={AddProductToCart}
                                      type={'ProductItem'}
                 />
             })}
